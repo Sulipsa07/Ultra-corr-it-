@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio - UltraCorr IT | Healthcare Technology Case Studies</title>
+<meta name="description" content="A showcase of UltraCorr IT healthcare technology projects: EHR integration, coding accuracy, secure data platforms, revenue cycle, telehealth and analytics.">
+<meta name="theme-color" content="#111827">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="assets/css/styles.css?v=34">
+<script>
+  // "js" turns on the scroll animations. "intro" shows the loading screen once per
+  // browser session (add ?intro to a URL to see it again); skipped for reduced motion.
+  document.documentElement.classList.add('js');
+  (function () {
+    var force = /[?&]intro\b/.test(location.search), seen = false;
+    try { seen = sessionStorage.getItem('ucIntroSeen') === '1'; } catch (e) {}
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (force || (!seen && !reduce)) document.documentElement.classList.add('intro');
+  })();
+</script>
+</head>
+<body>
+
+<!-- Loading screen -->
+<div id="intro" role="status" aria-label="Loading UltraCorr IT">
+  <div class="intro-floor"></div>
+  <div class="intro-stage">
+    <div class="intro-light"></div>
+    <div class="intro-leaf left"></div>
+    <div class="intro-leaf right"></div>
+    <svg class="intro-frame" viewBox="0 0 320 180" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="introStroke" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f59e0b"/>
+          <stop offset=".5" stop-color="#ea580c"/>
+          <stop offset="1" stop-color="#0ea5e9"/>
+        </linearGradient>
+      </defs>
+      <rect x="1" y="1" width="318" height="178" fill="none" stroke="url(#introStroke)" stroke-width="1.4" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    </svg>
+    <div class="intro-count">00</div>
+  </div>
+  <p class="intro-caption"><b class="gradient-text">UltraCorr</b> IT</p>
+  <button type="button" class="intro-skip">Skip intro</button>
+</div>
+<script src="assets/js/intro.js?v=34"></script>
+
+<!-- Icon set -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6v18h12V7zM14 3v4h4M9 12h6M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><path d="M3 4h18v12H3zM8 20h8M12 16v4M8 10l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.6-7.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><path d="M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 1 9-9M12 17a5 5 0 1 1 5-5M12 12l7-7M16 5h3v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3M4 15a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2zM20 15a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2zM17 17c0 2-2 3-5 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM8.5 14l-1.5 7 5-3 5 3-1.5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-records" viewBox="0 0 24 24"><path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-hospital" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7h14v14M10 21v-4h4v4M12 9v4M10 11h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-clinic" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v11h14V10M12 12v5M9.5 14.5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 12l9-8 9 8M5 10v10h14V10M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12zM12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></g></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></g></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM2 21a7 7 0 0 1 14 0M16 3.5a4 4 0 0 1 0 7.5M18 14a6 6 0 0 1 4 7"/></g></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H4a3 3 0 0 0 4 4M16 6h4a3 3 0 0 1-4 4M12 13v4M8 21h8M9 17h6"/></g></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></g></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h12v12H3zM15 10l6-3v10l-6-3"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></g></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/></g></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h10v20H7zM11 18h2"/></g></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a3 3 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></g></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0zM12 17v5"/></g></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5M3 17l9 5 9-5"/></g></symbol>
+  <symbol id="i-cube" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5v10l-9 5-9-5V7zM12 12l9-5M12 12v10M12 12L3 7"/></g></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V3h11v18M15 9h5v12M8 7h3M8 11h3M8 15h3M3 21h18"/></g></symbol>
+  <symbol id="i-dollar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></g></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM21 21l-5-5"/></g></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10"/></g></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16l1.5-6h11L19 16M3 16h18v4H3zM7 20v1M17 20v1"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></g></symbol>
+  <symbol id="i-coins" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8c0-1.7 2.7-3 6-3s6 1.3 6 3-2.7 3-6 3-6-1.3-6-3zM8 8v4c0 1.7 2.7 3 6 3s6-1.3 6-3V8M4 12c0 1.7 2.7 3 6 3M4 12v4c0 1.7 2.7 3 6 3"/></g></symbol>
+  <symbol id="i-file-contract" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6v18h12V7zM14 3v4h4M9 13h6M9 17h4"/></g></symbol>
+  <symbol id="i-user-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8 16a4 4 0 0 1 8 0"/></g></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="UltraCorr IT home">
+      <img class="brand-logo" src="assets/img/logo.png" alt="" width="40" height="40">
+      <span class="brand-text">UltraCorr IT</span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="portfolio.html" class="is-current" aria-current="page">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="pill pill-outline" type="button" data-open-modal>Get a Quote <svg class="ico"><use href="#i-arrow"/></svg></button>
+      <button class="menu" id="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menuPanel"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="menu-panel" id="menuPanel">
+    <nav aria-label="All pages">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="solutions.html">Solutions</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a>
+    </nav>
+    <div class="menu-contact">
+      <a href="tel:+919458888499"><svg class="ico"><use href="#i-phone"/></svg> +91 94588 88499</a>
+      <a href="mailto:info@ultracorrit.com"><svg class="ico"><use href="#i-mail"/></svg> info@ultracorrit.com</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero page-hero about-hero port-hero" aria-labelledby="page-title">
+    <div class="wrap about-hero-grid">
+      <div class="hero-copy">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span aria-current="page">Portfolio</span></nav>
+        <span class="eyebrow">Our Portfolio</span>
+        <h1 id="page-title" class="kinetic"><span class="line"><span class="word">Healthcare</span></span> <span class="line"><span class="word">Technology.</span></span> <span class="line"><span class="word gradient-text">Measurable</span></span> <span class="line"><span class="word gradient-text">Outcomes.</span></span></h1>
+        <p class="hero-intro">A showcase of healthcare technology solutions and measurable outcomes.</p>
+        <div class="hero-cta">
+          <a class="pill pill-ghost" href="#work">View Our Work <svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a class="play-link" href="contact.html"><span class="play-circle"><svg class="ico"><use href="#i-arrow"/></svg></span> Start a Project</a>
+        </div>
+      </div>
+    </div>
+    
+      <div class="iso-panel cube-panel" data-tilt-scene aria-hidden="true">
+        <svg class="orbits cube-orbits" viewBox="0 0 640 520" preserveAspectRatio="xMidYMid meet">
+          <ellipse id="cOrbA" cx="330" cy="260" rx="240" ry="80" transform="rotate(-12 330 260)"/>
+          <ellipse id="cOrbB" cx="330" cy="260" rx="190" ry="170" transform="rotate(20 330 260)"/>
+          <circle r="7" class="o-white"><animateMotion dur="10s" repeatCount="indefinite"><mpath href="#cOrbA"/></animateMotion></circle>
+          <circle r="6" class="o-sky"><animateMotion dur="10s" begin="-5s" repeatCount="indefinite"><mpath href="#cOrbA"/></animateMotion></circle>
+          <circle r="6" class="o-amber"><animateMotion dur="14s" repeatCount="indefinite"><mpath href="#cOrbB"/></animateMotion></circle>
+        </svg>
+        <div class="voxel-wrap"><div class="voxel"><div class="vface vf-front"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="vface vf-back"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="vface vf-right"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="vface vf-left"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="vface vf-top"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="vface vf-bottom"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="voxel-core"></div></div><div class="voxel-shadow"></div></div>
+        <div class="ptag t1"><svg class="ico"><use href="#i-box"/></svg><span><b>150+</b>Projects Completed</span></div><div class="ptag t2"><svg class="ico"><use href="#i-star"/></svg><span><b>99%</b>Client Satisfaction</span></div><div class="ptag t3"><svg class="ico"><use href="#i-chart"/></svg><span><b>40%</b>Average ROI Increase</span></div><div class="ptag t4"><svg class="ico"><use href="#i-users"/></svg><span><b>28+</b>Healthcare Partners</span></div>
+      </div>
+  </section>
+  <div class="wrap">
+    <ul class="cat-strip">
+      <li><a href="#work" data-jump="coding"><span>01</span>/ Medical Coding</a></li>
+      <li><a href="#work" data-jump="ehr"><span>02</span>/ EHR Solutions</a></li>
+      <li><a href="#work" data-jump="infrastructure"><span>03</span>/ Infrastructure</a></li>
+      <li><a href="#work" data-jump="analytics"><span>04</span>/ Analytics</a></li>
+    </ul>
+  </div>
+
+  <section class="section port-work" id="work">
+    <div class="wrap">
+      <div class="port-head">
+        <div>
+          <span class="eyebrow">Our Work</span>
+          <h2 class="split-heading"><span class="line">Impact, <span class="gradient-text">in practice.</span></span></h2>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filter projects"><button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All Projects</button><button class="filter-btn" type="button" data-filter="coding" aria-pressed="false">Medical Coding</button><button class="filter-btn" type="button" data-filter="infrastructure" aria-pressed="false">Infrastructure</button><button class="filter-btn" type="button" data-filter="ehr" aria-pressed="false">EHR Solutions</button><button class="filter-btn" type="button" data-filter="analytics" aria-pressed="false">Analytics</button></div>
+      </div>
+      <div class="bento-grid">
+        <article class="bento b-rcm filter-item reveal" data-category="coding">
+          <div class="b-head"><span>01</span><i></i><em>Coding / Revenue Cycle</em></div>
+          <h3>Revenue Cycle Optimization</h3>
+          <p class="b-sub">Automations increased reimbursements by $2.1M annually.</p>
+          <div class="dash">
+            <div class="dash-top"><b>Revenue Cycle</b><span>5 months</span></div>
+            <div class="dash-kpis">
+              <div><small>Reimbursements</small><b>+$2.1M</b><em>annually</em></div>
+              <div><small>Denial rate</small><b>-37%</b><em>after automation</em></div>
+              <div><small>Timeline</small><b>5</b><em>months</em></div>
+            </div>
+            <svg class="dash-chart" viewBox="0 0 400 110" preserveAspectRatio="none" aria-hidden="true">
+              <path class="area" d="M0 90 C 40 82, 70 86, 100 74 S 160 70, 200 58 S 260 50, 300 36 S 360 26, 400 14 L400 110 L0 110Z"/>
+              <path class="line" d="M0 90 C 40 82, 70 86, 100 74 S 160 70, 200 58 S 260 50, 300 36 S 360 26, 400 14"/>
+              <path class="line2" d="M0 60 C 50 64, 90 70, 140 72 S 220 80, 270 84 S 350 90, 400 94"/>
+            </svg>
+            <div class="dash-legend"><span class="l1">Reimbursements</span><span class="l2">Denials</span></div>
+          </div>
+          <div class="b-foot"><div><b>-37%</b><span>denial rate</span></div><div><b>+$2.1M</b><span>annual savings</span></div><a class="round-arrow" href="contact.html#message" aria-label="View case study"><svg class="ico"><use href="#i-arrow"/></svg></a></div>
+        </article>
+        <article class="bento b-ehr filter-item reveal" data-category="ehr">
+          <div class="b-head"><span>02</span><i></i><em>EHR Integration</em></div>
+          <div class="b-split">
+            <div>
+              <h3>EHR Integration for Hospital Network</h3>
+              <p>Seamless Epic integration improving workflow efficiency by 28%.</p>
+              <p class="b-metric"><b>28%</b><span>better workflow efficiency</span></p>
+              <p class="b-note"><svg class="ico"><use href="#i-chart"/></svg> 3-month ROI: 165% · 6 months · 500+ users</p>
+            </div>
+            <div class="net" aria-hidden="true">
+              <svg viewBox="0 0 220 200"><g><line x1="110" y1="100" x2="110" y2="22"/><line x1="110" y1="100" x2="192" y2="64"/><line x1="110" y1="100" x2="186" y2="160"/><line x1="110" y1="100" x2="30" y2="160"/><line x1="110" y1="100" x2="26" y2="64"/></g></svg>
+              <span class="net-core">EHR</span><span class="net-node n1"><svg class="ico"><use href="#i-hospital"/></svg><small>Hospital</small></span><span class="net-node n2"><svg class="ico"><use href="#i-users"/></svg><small>500+ users</small></span><span class="net-node n3"><svg class="ico"><use href="#i-clinic"/></svg><small>Clinics</small></span><span class="net-node n4"><svg class="ico"><use href="#i-file"/></svg><small>Records</small></span><span class="net-node n5"><svg class="ico"><use href="#i-chart"/></svg><small>Workflows</small></span>
+            </div>
+          </div>
+          <a class="round-arrow" href="contact.html#message" aria-label="View case study"><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="bento b-sec filter-item reveal" data-category="infrastructure">
+          <div class="b-head"><span>03</span><i></i><em>Secure Infrastructure</em></div>
+          <div class="b-split">
+            <div>
+              <h3>Secure Data Platform Deployment</h3>
+              <p>HIPAA-compliant data lake with automated access controls.</p>
+              <p class="b-metric"><b>50TB+</b><span>data · 0 breach incidents</span></p>
+              <p class="b-note"><svg class="ico"><use href="#i-clock"/></svg> 8 months</p>
+            </div>
+            <div class="lock-art" aria-hidden="true">
+              <span class="srv s1"></span><span class="srv s2"></span><span class="srv s3"></span>
+              <svg class="streams" viewBox="0 0 220 180"><path d="M0 60 C 60 50, 80 90, 220 70"/><path d="M0 110 C 70 120, 90 80, 220 120"/><path d="M0 140 C 60 130, 120 150, 220 100"/></svg>
+              <div class="lock"><span class="shackle"></span><span class="body"><svg class="ico"><use href="#i-shield"/></svg></span></div>
+            </div>
+          </div>
+          <a class="round-arrow" href="contact.html#message" aria-label="View case study"><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="bento b-tele filter-item reveal" data-category="ehr">
+          <div class="call" aria-hidden="true">
+            <div class="call-side"><i></i><i class="on"></i><i></i><i></i><i></i></div>
+            <div class="call-video"><span class="call-avatar"><svg class="ico"><use href="#i-user-shield"/></svg></span><div class="call-ctrls"><i></i><i></i><i class="end"></i></div></div>
+            <div class="call-menu"><span><svg class="ico"><use href="#i-users"/></svg> Patients</span><span><svg class="ico"><use href="#i-clock"/></svg> Appointments</span><span><svg class="ico"><use href="#i-chat"/></svg> Messages</span></div>
+            <div class="call-chat"><b>Video Consultation</b><p class="in">How are you feeling today?</p><p class="out">Much better, thank you!</p></div>
+          </div>
+          <div class="tele-copy">
+            <div class="b-head"><span>04</span><i></i><em>Digital Health</em></div>
+            <h3>Telehealth Platform Rollout</h3>
+            <p>Scalable platform supporting 50k monthly virtual visits.</p>
+            <p class="b-metric"><b>4.8/5</b><span>patient satisfaction · 50k visits/month · 7 months</span></p>
+            <a class="round-arrow" href="contact.html#message" aria-label="View case study"><svg class="ico"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="bento b-small filter-item reveal" data-category="coding">
+          <div class="b-head"><span>05</span><i></i><em>Medical Coding</em></div>
+          <span class="core-ico"><svg class="ico"><use href="#i-file"/></svg></span>
+          <h3>Coding Accuracy Improvement</h3>
+          <p>99.6% coding accuracy achieved reducing denials by 32%.</p>
+          <p class="b-metric"><b>99.6%</b><span>accuracy · audit pass rate 100%</span></p>
+          <p class="b-note"><svg class="ico"><use href="#i-clock"/></svg> 4 months · <svg class="ico"><use href="#i-hospital"/></svg> 300-bed facility</p>
+          <a class="round-arrow" href="contact.html#message" aria-label="View case study"><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="bento b-small filter-item reveal" data-category="analytics">
+          <div class="b-head"><span>06</span><i></i><em>Analytics</em></div>
+          <span class="core-ico sky"><svg class="ico"><use href="#i-chart"/></svg></span>
+          <h3>Analytics for Population Health</h3>
+          <p>Predictive models reduced readmissions by 14%.</p>
+          <p class="b-metric"><b>14%</b><span>fewer readmissions · target cohorts improved outcomes</span></p>
+          <p class="b-note"><svg class="ico"><use href="#i-clock"/></svg> 9 months</p>
+          <a class="round-arrow" href="contact.html#message" aria-label="View case study"><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section portfolio" id="testimonials">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Client Testimonials</span>
+        <h2 class="split-heading"><span class="line">What our healthcare partners</span> <span class="line"><span class="gradient-text">say about our work</span></span></h2>
+      </div>
+      <div class="quote-grid"><figure class="quote reveal"><div style="color:var(--amber);display:flex;gap:2px" aria-label="5 out of 5 stars"><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg></div><blockquote>"UltraCorr IT transformed our coding operations with 99.6% accuracy. Their expertise in healthcare technology is unmatched."</blockquote><figcaption><span class="avatar">JD</span><span><b>John Davis</b>CTO, Regional Medical Center</span></figcaption></figure><figure class="quote reveal"><div style="color:var(--amber);display:flex;gap:2px" aria-label="5 out of 5 stars"><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg></div><blockquote>"The EHR integration was seamless. Our workflow efficiency improved by 28% in just 3 months. Highly recommended!"</blockquote><figcaption><span class="avatar">SM</span><span><b>Sarah Martinez</b>CIO, Multi-Specialty Clinic</span></figcaption></figure><figure class="quote reveal"><div style="color:var(--amber);display:flex;gap:2px" aria-label="5 out of 5 stars"><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg></div><blockquote>"Their telehealth solution helped us expand services to rural areas. Patient satisfaction is at an all-time high of 4.8/5."</blockquote><figcaption><span class="avatar">RJ</span><span><b>Robert Johnson</b>CEO, Community Health System</span></figcaption></figure></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Ready to Build What's Next?</h2>
+        <p>Partner with us to deliver secure, scalable healthcare IT solutions.</p>
+        <div class="cta-actions"><a class="pill pill-white" href="contact.html">Contact Our Team <svg class="ico"><use href="#i-arrow"/></svg></a><a class="pill pill-line" href="services.html">Explore Our Services</a></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="index.html" aria-label="UltraCorr IT home"><img class="brand-logo" src="assets/img/logo.png" alt="" width="40" height="40"><span class="brand-text">UltraCorr IT</span></a>
+      <p class="footer-about">Transforming healthcare through innovative technology solutions.</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/ultracorrit" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/ultracorrit_official/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/share/1C6ptisg1m/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://x.com/ultracorrit" target="_blank" rel="noopener">X</a>
+      </div>
+    </div>
+    <div><h3>Services</h3><ul><li><a href="services.html">Medical Coding</a></li><li><a href="services.html">Infrastructure Development</a></li><li><a href="services.html">IT Consulting</a></li><li><a href="services.html">EHR Implementation</a></li></ul></div>
+    <div><h3>Company</h3><ul><li><a href="about.html">About Us</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h3>Contact Info</h3><ul><li>+91 94588 88499</li><li>info@ultracorrit.com</li><li>4th Floor, Aparna Astute Jubilee Hills, Shaikpet, Hyderabad, Telangana 500096</li></ul></div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> UltraCorr IT. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <h2 id="modalTitle">Get a Quote</h2>
+      <button class="close" type="button" data-close-modal>Close <span aria-hidden="true">✕</span></button>
+    </div>
+    <p class="modal-sub">Let's discuss how we can optimize your operations and enhance patient care.</p>
+    <form class="contact-form" id="modalForm" novalidate>
+      <div class="field-row">
+        <div class="field"><label for="mFirstName">First Name *</label><input id="mFirstName" name="firstName" autocomplete="given-name" required><span class="field-error" id="mFirstName-error"></span></div>
+        <div class="field"><label for="mLastName">Last Name *</label><input id="mLastName" name="lastName" autocomplete="family-name" required><span class="field-error" id="mLastName-error"></span></div>
+      </div>
+      <div class="field"><label for="mEmail">Email *</label><input id="mEmail" name="email" type="email" autocomplete="email" required><span class="field-error" id="mEmail-error"></span></div>
+      <div class="field">
+        <label for="mInterest">Service Interest</label>
+        <select id="mInterest" name="interest">
+          <option value="">Select a service...</option>
+          <option>Medical Coding Services</option>
+          <option>Infrastructure Development</option>
+          <option>IT Development Services</option>
+          <option>EHR Implementation</option>
+          <option>Consulting Services</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field"><label for="mMessage">Message *</label><textarea id="mMessage" name="message" required rows="3"></textarea><span class="field-error" id="mMessage-error"></span></div>
+      <div class="hp" aria-hidden="true"><label for="mWebsite">Leave this empty</label><input id="mWebsite" name="_honey" tabindex="-1" autocomplete="off"></div>
+      <button class="pill pill-brand submit" type="submit"><span class="btn-label">Send Message</span> <svg class="ico"><use href="#i-arrow"/></svg></button>
+      <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<div class="cursor" aria-hidden="true"></div>
+
+<script src="assets/js/config.js?v=34"></script>
+<script src="assets/js/stage.js?v=34"></script>
+<script src="assets/js/main.js?v=34"></script>
+<script src="assets/js/agent.js?v=34"></script>
+</body>
+</html>

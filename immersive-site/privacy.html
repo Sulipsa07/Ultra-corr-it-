@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - UltraCorr IT</title>
+<meta name="description" content="How UltraCorr IT collects, uses, shares and protects personal data under the IT Act, SPDI Rules and the DPDP Act.">
+<meta name="theme-color" content="#111827">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="assets/css/styles.css?v=34">
+<script>
+  // "js" turns on the scroll animations. "intro" shows the loading screen once per
+  // browser session (add ?intro to a URL to see it again); skipped for reduced motion.
+  document.documentElement.classList.add('js');
+  (function () {
+    var force = /[?&]intro\b/.test(location.search), seen = false;
+    try { seen = sessionStorage.getItem('ucIntroSeen') === '1'; } catch (e) {}
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (force || (!seen && !reduce)) document.documentElement.classList.add('intro');
+  })();
+</script>
+</head>
+<body>
+
+<!-- Loading screen -->
+<div id="intro" role="status" aria-label="Loading UltraCorr IT">
+  <div class="intro-floor"></div>
+  <div class="intro-stage">
+    <div class="intro-light"></div>
+    <div class="intro-leaf left"></div>
+    <div class="intro-leaf right"></div>
+    <svg class="intro-frame" viewBox="0 0 320 180" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="introStroke" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f59e0b"/>
+          <stop offset=".5" stop-color="#ea580c"/>
+          <stop offset="1" stop-color="#0ea5e9"/>
+        </linearGradient>
+      </defs>
+      <rect x="1" y="1" width="318" height="178" fill="none" stroke="url(#introStroke)" stroke-width="1.4" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    </svg>
+    <div class="intro-count">00</div>
+  </div>
+  <p class="intro-caption"><b class="gradient-text">UltraCorr</b> IT</p>
+  <button type="button" class="intro-skip">Skip intro</button>
+</div>
+<script src="assets/js/intro.js?v=34"></script>
+
+<!-- Icon set -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6v18h12V7zM14 3v4h4M9 12h6M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><path d="M3 4h18v12H3zM8 20h8M12 16v4M8 10l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.6-7.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><path d="M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 1 9-9M12 17a5 5 0 1 1 5-5M12 12l7-7M16 5h3v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3M4 15a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2zM20 15a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2zM17 17c0 2-2 3-5 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM8.5 14l-1.5 7 5-3 5 3-1.5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-records" viewBox="0 0 24 24"><path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-hospital" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7h14v14M10 21v-4h4v4M12 9v4M10 11h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-clinic" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v11h14V10M12 12v5M9.5 14.5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 12l9-8 9 8M5 10v10h14V10M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12zM12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></g></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></g></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM2 21a7 7 0 0 1 14 0M16 3.5a4 4 0 0 1 0 7.5M18 14a6 6 0 0 1 4 7"/></g></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H4a3 3 0 0 0 4 4M16 6h4a3 3 0 0 1-4 4M12 13v4M8 21h8M9 17h6"/></g></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></g></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h12v12H3zM15 10l6-3v10l-6-3"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></g></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/></g></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h10v20H7zM11 18h2"/></g></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a3 3 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></g></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0zM12 17v5"/></g></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5M3 17l9 5 9-5"/></g></symbol>
+  <symbol id="i-cube" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5v10l-9 5-9-5V7zM12 12l9-5M12 12v10M12 12L3 7"/></g></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V3h11v18M15 9h5v12M8 7h3M8 11h3M8 15h3M3 21h18"/></g></symbol>
+  <symbol id="i-dollar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></g></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM21 21l-5-5"/></g></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10"/></g></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16l1.5-6h11L19 16M3 16h18v4H3zM7 20v1M17 20v1"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></g></symbol>
+  <symbol id="i-coins" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8c0-1.7 2.7-3 6-3s6 1.3 6 3-2.7 3-6 3-6-1.3-6-3zM8 8v4c0 1.7 2.7 3 6 3s6-1.3 6-3V8M4 12c0 1.7 2.7 3 6 3M4 12v4c0 1.7 2.7 3 6 3"/></g></symbol>
+  <symbol id="i-file-contract" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6v18h12V7zM14 3v4h4M9 13h6M9 17h4"/></g></symbol>
+  <symbol id="i-user-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8 16a4 4 0 0 1 8 0"/></g></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="UltraCorr IT home">
+      <img class="brand-logo" src="assets/img/logo.png" alt="" width="40" height="40">
+      <span class="brand-text">UltraCorr IT</span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="pill pill-outline" type="button" data-open-modal>Get a Quote <svg class="ico"><use href="#i-arrow"/></svg></button>
+      <button class="menu" id="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menuPanel"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="menu-panel" id="menuPanel">
+    <nav aria-label="All pages">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="solutions.html">Solutions</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a>
+    </nav>
+    <div class="menu-contact">
+      <a href="tel:+919458888499"><svg class="ico"><use href="#i-phone"/></svg> +91 94588 88499</a>
+      <a href="mailto:info@ultracorrit.com"><svg class="ico"><use href="#i-mail"/></svg> info@ultracorrit.com</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero page-hero no-aside" aria-labelledby="page-title">
+    <div class="hero-bg" aria-hidden="true">
+      <svg class="waves" viewBox="0 0 1440 620" preserveAspectRatio="none">
+        <path class="wave w1" d="M0 470 C 260 380, 420 600, 760 520 S 1180 380, 1440 470 L1440 620 L0 620Z" fill="url(#waveA)"/>
+        <path class="wave w2" d="M0 520 C 300 600, 520 430, 860 500 S 1260 600, 1440 520 L1440 620 L0 620Z" fill="url(#waveB)"/>
+        <path class="wave-line l1" d="M0 430 C 300 330, 520 560, 840 470 S 1240 330, 1440 420" fill="none" stroke="#0ea5e9" stroke-opacity=".35" stroke-width="1.2"/>
+        <path class="wave-line l2" d="M0 455 C 320 360, 540 580, 860 490 S 1260 350, 1440 445" fill="none" stroke="#f59e0b" stroke-opacity=".35" stroke-width="1"/>
+        <defs>
+          <linearGradient id="waveA" x1="0" x2="1"><stop offset="0" stop-color="#0ea5e9" stop-opacity="0"/><stop offset=".35" stop-color="#0ea5e9" stop-opacity=".3"/><stop offset="1" stop-color="#f59e0b" stop-opacity=".22"/></linearGradient>
+          <linearGradient id="waveB" x1="0" x2="1"><stop offset="0" stop-color="#ea580c" stop-opacity=".18"/><stop offset=".6" stop-color="#f59e0b" stop-opacity=".16"/><stop offset="1" stop-color="#0ea5e9" stop-opacity="0"/></linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span aria-current="page">Privacy Policy</span></nav>
+        <span class="eyebrow">Legal</span>
+        <h1 id="page-title" class="kinetic"><span class="line"><span class="word">Privacy</span></span> <span class="line"><span class="word gradient-text">Policy</span></span></h1>
+        <p class="hero-intro">Your data privacy and security are our highest priority.</p>
+      </div>
+    </div>
+    <img class="hero-sign" src="assets/img/caduceus.png" alt="" width="319" height="280">
+  </section>
+
+  <section class="section" style="padding-top:20px">
+    <div class="wrap legal">
+      <aside class="toc" aria-label="On this page">
+        <p>On this page</p>
+        <nav><a href="#section-1"><span>1</span>Introduction and Scope</a><a href="#section-2"><span>2</span>Information We Collect</a><a href="#section-3"><span>3</span>How We Use Your Information (Purpose and Legal Basis)</a><a href="#section-4"><span>4</span>How We Share Your Information</a><a href="#section-5"><span>5</span>Your Rights Under Indian Laws</a><a href="#section-6"><span>6</span>Data Security Measures</a><a href="#section-7"><span>7</span>Data Retention</a><a href="#section-8"><span>8</span>International Data Transfers</a><a href="#section-9"><span>9</span>Specific Legal Compliance for Indian Jurisdiction</a><a href="#section-10"><span>10</span>Cookies and Tracking Technologies</a><a href="#section-11"><span>11</span>Children's Privacy</a><a href="#section-12"><span>12</span>Grievance Officer and Contact Information</a><a href="#section-13"><span>13</span>Policy Updates and Amendments</a></nav>
+        <div class="toc-help"><svg class="ico"><use href="#i-user-shield"/></svg><b>Questions about this policy?</b>Email <a href="mailto:info@ultracorrit.com">info@ultracorrit.com</a> or call +91 94588 88499.</div>
+      </aside>
+      <div class="legal-body">
+
+            <article id="section-1" class="legal-card reveal">
+                <h2><span class="n">1</span><span>Introduction and Scope</span></h2>
+                <p>UltraCorr IT Private Limited ("we," "us," or "our") is committed to protecting your privacy in compliance with Indian data protection laws. This Privacy Policy explains how we collect, use, disclose, and protect your personal data when you use our website (<a href="https://www.ultracorrit.com">https://www.ultracorrit.com</a>) and services.</p>
+                <p>This policy is formulated in accordance with the Information Technology Act, 2000 and the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 ("SPDI Rules"). It also incorporates requirements under the Digital Personal Data Protection Act, 2023 ("DPDP Act"). The policy applies to all personal data collected in digital format or non-digitized data subsequently digitized.</p>
+                <p>By using our Site or services, you consent to the practices described herein. For the purpose of this policy, "Data Principal" refers to the individual to whom the personal data relates, and "Data Fiduciary" refers to our role in determining the purpose and means of processing personal data.</p>
+            </article>
+<article id="section-2" class="legal-card reveal">
+                <h2><span class="n">2</span><span>Information We Collect</span></h2>
+                <h3>2.1 Categories of Personal Data Collected</h3>
+                <p>We collect the following types of personal information in compliance with the data minimization principle under the DPDP Act:</p>
+                <ul>
+                    <li>Personal Identifiers: Name, email address, phone number, postal address, organization name, job title</li>
+                    <li>Professional Information: Employment history, educational background, professional certifications</li>
+                    <li>Technical Data: IP address, browser type, device identifier, operating system, pages visited, time stamps, referring URLs</li>
+                    <li>Sensitive Personal Data (as defined under SPDI Rules): Passwords, financial information, but only when absolutely necessary for service delivery</li>
+                    <li>Communications Records: Records of your communications with us including email, chat, and support requests</li>
+                </ul>
+                
+                <h3>2.2 Methods of Collection</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Collection Method</th>
+                                <th>Type of Data Collected</th>
+                                <th>Legal Basis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Contact forms</td>
+                                <td>Name, email, organization, phone</td>
+                                <td>Explicit consent</td>
+                            </tr>
+                            <tr>
+                                <td>Newsletter sign-ups</td>
+                                <td>Email address, preferences</td>
+                                <td>Explicit consent</td>
+                            </tr>
+                            <tr>
+                                <td>Technical automated collection</td>
+                                <td>IP address, browser data, cookies</td>
+                                <td>Legitimate interest</td>
+                            </tr>
+                            <tr>
+                                <td>Service communications</td>
+                                <td>Support requests, inquiry details</td>
+                                <td>Contract performance</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+<article id="section-3" class="legal-card reveal">
+                <h2><span class="n">3</span><span>How We Use Your Information (Purpose and Legal Basis)</span></h2>
+                <p>We use your personal data for the following purposes, adhering to the principle that personal data can only be processed for the purpose specified at the time of collection:</p>
+                <ul>
+                    <li>Service Provision: To provide, maintain, and improve our services and the Site, including processing transactions and delivering requested services</li>
+                    <li>Customer Support: To respond to your inquiries, questions, or requests, and provide technical support</li>
+                    <li>Marketing Communications: To send you information, newsletters, or marketing communications only with your explicit consent, with clear opt-out options in every communication</li>
+                    <li>Analytics and Improvement: To monitor usage patterns, analyze trends, and enhance user experience through data analysis</li>
+                    <li>Security and Compliance: To detect, prevent, or address technical issues, security breaches, and comply with legal obligations under Indian laws</li>
+                </ul>
+                <p>We ensure that processing is limited to only those items of personal data that are required for attaining a specific purpose as mandated by the DPDP Act.</p>
+            </article>
+<article id="section-4" class="legal-card reveal">
+                <h2><span class="n">4</span><span>How We Share Your Information</span></h2>
+                <p>We may disclose your personal data in the following circumstances, always ensuring appropriate safeguards:</p>
+                <ul>
+                    <li>Service Providers: With vendors, contractors, or agents who help us operate our Site or provide services (e.g., hosting, analytics, email delivery), under strict confidentiality agreements</li>
+                    <li>Legal Compliance: When required to comply with applicable laws, regulations, legal processes, or governmental requests, including to the Data Protection Board of India once established</li>
+                    <li>Business Transfers: In connection with any merger, sale of company assets, financing, or acquisition of all or a portion of our business, with notice to affected users</li>
+                    <li>With Your Consent: For any other purpose disclosed to you with your prior explicit consent</li>
+                </ul>
+                <p>Under the SPDI Rules, disclosure of sensitive personal data to third parties requires prior permission from the provider of such information.</p>
+            </article>
+<article id="section-5" class="legal-card reveal">
+                <h2><span class="n">5</span><span>Your Rights Under Indian Laws</span></h2>
+                <h3>5.1 Specific Rights Under DPDP Act and IT Act</h3>
+                <p>As a Data Principal, you have the following rights under Indian laws:</p>
+                <ul>
+                    <li>Right to Access: You can request information about what personal data we hold about you and how it is being processed</li>
+                    <li>Right to Correction and Erasure: You may ask that your personal data be corrected, updated, or deleted when it is no longer necessary for the purpose collected</li>
+                    <li>Right to Consent Management: You have the right to give, withdraw, or modify consent for data processing at any time</li>
+                    <li>Right to Grievance Redressal: You may approach our Grievance Officer (details in Section 12) or the Data Protection Board for complaint resolution</li>
+                    <li>Right to Nomination: You can nominate another individual to exercise your rights in the event of death or incapacity</li>
+                </ul>
+                
+                <h3>5.2 Procedures for Exercising Your Rights</h3>
+                <p>To exercise any of these rights, please contact our Grievance Officer using the details provided in Section 12. We will respond to legitimate requests within 30 days as required by Indian regulations, after verifying your identity to prevent unauthorized access.</p>
+            </article>
+<article id="section-6" class="legal-card reveal">
+                <h2><span class="n">6</span><span>Data Security Measures</span></h2>
+                <p>We implement reasonable security practices and procedures as required under Section 43A of the IT Act, including:</p>
+                <ul>
+                    <li>Administrative Safeguards: Privacy training for employees, access controls, and security policies</li>
+                    <li>Technical Safeguards: Encryption, firewalls, secure network infrastructure, and regular security assessments</li>
+                    <li>Physical Safeguards: Secure access to our facilities and storage systems</li>
+                </ul>
+                <p>In accordance with the IT Act, we maintain documented information security programs and implement IS/ISO/IEC 27001 standard security practices or other standards approved by the government. However, no method of transmission over the Internet or electronic storage is 100% secure.</p>
+            </article>
+<article id="section-7" class="legal-card reveal">
+                <h2><span class="n">7</span><span>Data Retention</span></h2>
+                <p>We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law. Our retention practices follow the storage limitation principle of the DPDP Act, ensuring data is kept only for the duration necessary for the stated purpose.</p>
+                <p>Specific retention periods are based on:</p>
+                <ul>
+                    <li>The purpose for which we collected and process the data</li>
+                    <li>Legal obligations under Indian laws (e.g., tax requirements requiring retention for 5-7 years)</li>
+                    <li>Operational requirements such as ongoing customer relationships</li>
+                </ul>
+                <p>Upon expiration of the retention period, we securely delete or anonymize your data so it can no longer identify you.</p>
+            </article>
+<article id="section-8" class="legal-card reveal">
+                <h2><span class="n">8</span><span>International Data Transfers</span></h2>
+                <p>If your data is transferred outside India, we ensure that such transfers comply with the cross-border data transfer restrictions under the DPDP Act. We will only transfer data to countries or entities that provide adequate levels of protection or under approved contractual arrangements that ensure comparable security standards.</p>
+                <p>For international transfers, we implement appropriate safeguards such as:</p>
+                <ul>
+                    <li>Standard contractual clauses approved by Indian authorities</li>
+                    <li>Technical and organizational measures to secure data during transfer</li>
+                    <li>Due diligence on recipients' security practices</li>
+                </ul>
+            </article>
+<article id="section-9" class="legal-card reveal">
+                <h2><span class="n">9</span><span>Specific Legal Compliance for Indian Jurisdiction</span></h2>
+                <h3>9.1 Compliance with SPDI Rules</h3>
+                <p>In accordance with the SPDI Rules, we:</p>
+                <ul>
+                    <li>Provide a clear privacy policy that is easily accessible on our website (<a href="https://www.ultracorrit.com/privacy-policy">https://www.ultracorrit.com/privacy-policy</a>)</li>
+                    <li>Obtain explicit consent in writing or through electronic means before collecting sensitive personal data</li>
+                    <li>Offer an option to opt-out of providing data and allow withdrawal of consent</li>
+                    <li>Designate a Grievance Officer whose contact details are published on our website</li>
+                </ul>
+
+                <h3>9.2 Compliance with DPDP Act</h3>
+                <p>Under the DPDP Act, we adhere to the following principles:</p>
+                <ul>
+                    <li>Lawful, Fair, and Transparent Processing: We process data lawfully and transparently</li>
+                    <li>Purpose Limitation: We use data only for the specified purpose at collection</li>
+                    <li>Data Minimization: We collect only necessary data for the stated purpose</li>
+                    <li>Data Accuracy: We make reasonable efforts to ensure data accuracy</li>
+                    <li>Storage Limitation: We retain data only as long as necessary</li>
+                    <li>Accountability: We are accountable for compliance with these principles</li>
+                </ul>
+
+                <h3>9.3 Telangana Government Considerations</h3>
+                <p>While India has a federal data protection framework with the DPDP Act as the overarching law, we also comply with any specific requirements under Telangana state laws that may apply to our operations. Currently, there are no specific data protection bylaws in Telangana that override the national framework, but we monitor for any regional developments.</p>
+            </article>
+<article id="section-10" class="legal-card reveal">
+                <h2><span class="n">10</span><span>Cookies and Tracking Technologies</span></h2>
+                <p>We use cookies and similar technologies to enhance user experience, analyze site usage, and deliver personalized content. Our practices comply with the consent requirements under Indian laws.</p>
+                <ul>
+                    <li>Types of Cookies Used: Essential (necessary for site functionality), analytical (site usage analysis), and preference cookies (remembering your settings)</li>
+                    <li>Consent Mechanism: We obtain consent through a clear cookie banner when you first visit our site</li>
+                    <li>Control Options: You can manage cookie preferences through your browser settings or our cookie preference center (<a href="https://www.ultracorrit.com/cookie-preferences">https://www.ultracorrit.com/cookie-preferences</a>)</li>
+                </ul>
+            </article>
+<article id="section-11" class="legal-card reveal">
+                <h2><span class="n">11</span><span>Children's Privacy</span></h2>
+                <p>Our services are not directed to children under the age of 18. We do not knowingly collect personal data from minors without verified parental consent in accordance with the DPDP Act. If we discover that a minor has provided us with personal data without appropriate consent, we will take steps to delete such information promptly.</p>
+            </article>
+<article id="section-12" class="legal-card reveal">
+                <h2><span class="n">12</span><span>Grievance Officer and Contact Information</span></h2>
+                <p>In compliance with the SPDI Rules, we have designated a Grievance Officer to address your privacy-related concerns. For any questions, requests, or complaints regarding this Privacy Policy or your personal data, please contact:</p>
+                <div class="mt-3 text-gray-600">
+                    <p><strong>Grievance Officer</strong><br>
+                    UltraCorr IT Private Limited</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@ultracorrit.com">info@ultracorrit.com</a> with subject "Attention: Grievance Officer"</p>
+                    <p><strong>Phone:</strong> +91 7674094179</p>
+                    <p><strong>Response Time:</strong> Within 30 days as required under Indian regulations</p>
+                </div>
+                <p>You also have the right to approach the Data Protection Board of India once established under the DPDP Act for redressal of complaints.</p>
+            </article>
+<article id="section-13" class="legal-card reveal">
+                <h2><span class="n">13</span><span>Policy Updates and Amendments</span></h2>
+                <p>We may update this Privacy Policy periodically to reflect changes in our practices, technology, legal requirements, or other factors. The "Last updated" date at the top indicates when the latest revisions were made. We will notify users of material changes through prominent notices on our website (<a href="https://www.ultracorrit.com">https://www.ultracorrit.com</a>) or direct communication.</p>
+                <p>In accordance with the principle of transparency, we will indicate the version history of this policy, and users will be able to access previous versions upon request by contacting our Grievance Officer. Continued use of our services after changes constitutes acceptance of the updated policy.</p>
+            </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="index.html" aria-label="UltraCorr IT home"><img class="brand-logo" src="assets/img/logo.png" alt="" width="40" height="40"><span class="brand-text">UltraCorr IT</span></a>
+      <p class="footer-about">Transforming healthcare through innovative technology solutions.</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/ultracorrit" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/ultracorrit_official/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/share/1C6ptisg1m/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://x.com/ultracorrit" target="_blank" rel="noopener">X</a>
+      </div>
+    </div>
+    <div><h3>Services</h3><ul><li><a href="services.html">Medical Coding</a></li><li><a href="services.html">Infrastructure Development</a></li><li><a href="services.html">IT Consulting</a></li><li><a href="services.html">EHR Implementation</a></li></ul></div>
+    <div><h3>Company</h3><ul><li><a href="about.html">About Us</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h3>Contact Info</h3><ul><li>+91 94588 88499</li><li>info@ultracorrit.com</li><li>4th Floor, Aparna Astute Jubilee Hills, Shaikpet, Hyderabad, Telangana 500096</li></ul></div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> UltraCorr IT. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <h2 id="modalTitle">Get a Quote</h2>
+      <button class="close" type="button" data-close-modal>Close <span aria-hidden="true">✕</span></button>
+    </div>
+    <p class="modal-sub">Let's discuss how we can optimize your operations and enhance patient care.</p>
+    <form class="contact-form" id="modalForm" novalidate>
+      <div class="field-row">
+        <div class="field"><label for="mFirstName">First Name *</label><input id="mFirstName" name="firstName" autocomplete="given-name" required><span class="field-error" id="mFirstName-error"></span></div>
+        <div class="field"><label for="mLastName">Last Name *</label><input id="mLastName" name="lastName" autocomplete="family-name" required><span class="field-error" id="mLastName-error"></span></div>
+      </div>
+      <div class="field"><label for="mEmail">Email *</label><input id="mEmail" name="email" type="email" autocomplete="email" required><span class="field-error" id="mEmail-error"></span></div>
+      <div class="field">
+        <label for="mInterest">Service Interest</label>
+        <select id="mInterest" name="interest">
+          <option value="">Select a service...</option>
+          <option>Medical Coding Services</option>
+          <option>Infrastructure Development</option>
+          <option>IT Development Services</option>
+          <option>EHR Implementation</option>
+          <option>Consulting Services</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field"><label for="mMessage">Message *</label><textarea id="mMessage" name="message" required rows="3"></textarea><span class="field-error" id="mMessage-error"></span></div>
+      <div class="hp" aria-hidden="true"><label for="mWebsite">Leave this empty</label><input id="mWebsite" name="_honey" tabindex="-1" autocomplete="off"></div>
+      <button class="pill pill-brand submit" type="submit"><span class="btn-label">Send Message</span> <svg class="ico"><use href="#i-arrow"/></svg></button>
+      <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<div class="cursor" aria-hidden="true"></div>
+
+<script src="assets/js/config.js?v=34"></script>
+<script src="assets/js/stage.js?v=34"></script>
+<script src="assets/js/main.js?v=34"></script>
+<script src="assets/js/agent.js?v=34"></script>
+</body>
+</html>
